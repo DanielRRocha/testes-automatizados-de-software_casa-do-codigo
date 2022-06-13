@@ -5,13 +5,24 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Testes automatizados de software - Um guia prático - Casa do Codigo</name>
 
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>17</source>
+					<target>17</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>17</java.version>
-		<maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
+		<maven.compiler.target>17</maven.compiler.target>
+		<maven-compiler-plugin.version>3.6.3</maven-compiler-plugin.version>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<artifactId>junit</artifactId>
